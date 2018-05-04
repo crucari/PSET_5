@@ -1,4 +1,5 @@
 // Implements a dictionary's functionality
+// Implement a program that spell-checks a file
 
 #include <stdbool.h>
 
