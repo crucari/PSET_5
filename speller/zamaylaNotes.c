@@ -28,3 +28,12 @@ typedef struct node         //define struct for a node
 node;
 
 node *hashtable[50];  //the #50 stands for the number of "buckets" the hashtable will contain
+
+//Making a new word
+
+while(fscanf(file, "%s", word)!=EOF)   //This will take the dictionary file, look for a string, and then put that string into a variable called word.
+{
+    ...
+}
+
+//It will go through this loop until the end of the dictionary file is reached
