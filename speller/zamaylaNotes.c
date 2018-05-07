@@ -9,4 +9,5 @@ typedef struct node
 
      node;
 
-     node * node1 - malloc(size of node));
+     node * node1 - malloc(size of node));  //allocating memory for node 1
+     node * node1 - malloc(size of node));  //allocating memory for node 1
