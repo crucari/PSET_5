@@ -52,3 +52,13 @@ if (new_node == NULL)
 
 //If malloc is successful, copy the word into the node using the string copy function.
 strcpy(new_node -> word, word);
+
+//How to insert a node into the linked list
+new_node -> next = head;
+head = new_node;
+
+//We're inserting new node into the very beginning, and that becomes the first value.
+//That means the new node should point to whatever node was previously the first value in the list.
+//New node next is pointing to the pointer the head is pointing to the pointer the head is pointing to.
+//Head pointer can now be assigned to the new node.
+//In this way, we have a linked list.
