@@ -74,11 +74,11 @@ node;
 node*root;
 
 // Unloading aka Freeing Linked List:
-node * cursor = head;
+node * cursor = head;  //refers to the node pointer that points to the very first element in a linked list
 while(cursor != NULL)
 {
-    node *temp = cursor;
-    cursor = cursor -> next;
+    node *temp = cursor;      //temp node pointer points to a cursor
+    cursor = cursor -> next;  //Here the cursor is advanced, and then the temp pointer is freed
     free(temp);
 }
 
