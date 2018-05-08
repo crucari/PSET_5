@@ -29,7 +29,7 @@ node;
 
 node *hashtable[50];  //the #50 stands for the number of "buckets" the hashtable will contain
 
-//Making a new word
+//Making a new word (scanning)
 
 while(fscanf(file, "%s", word)!=EOF)   //This will take the dictionary file, look for a string, and then put that string into a variable called word.
 {
@@ -37,3 +37,18 @@ while(fscanf(file, "%s", word)!=EOF)   //This will take the dictionary file, loo
 }
 
 //It will go through this loop until the end of the dictionary file is reached
+
+//Mallocing a node for each new word that is scanned
+
+node *new_node = malloc(sizeof(node));
+if (new_node == NULL)
+{
+    unload();
+    return false;
+
+}
+
+//Make sure that the malloc has succeesed. If it runs out of memory, malloc will return NULL.
+
+//If malloc is successful, copy the word into the node using the string copy function.
+strcpy(new_node -> word, word);
