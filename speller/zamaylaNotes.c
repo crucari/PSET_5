@@ -73,3 +73,12 @@ node;
 
 node*root;
 
+// Unloading aka Freeing Linked List:
+node * cursor = head;
+while(cursor != NULL)
+{
+    node *temp = cursor;
+    cursor = cursor -> next;
+    free(temp);
+}
+
