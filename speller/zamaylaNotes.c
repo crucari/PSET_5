@@ -62,3 +62,14 @@ head = new_node;
 //New node next is pointing to the pointer the head is pointing to the pointer the head is pointing to.
 //Head pointer can now be assigned to the new node.
 //In this way, we have a linked list.
+
+// Trie ex:
+typedef struct node
+{
+    bool is_word;
+    struct node *children[27];
+}
+node;
+
+node*root;
+
