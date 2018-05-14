@@ -1,7 +1,7 @@
 // Linked List:
 //Allocating memory for the node, using arrow notation to access the word, and linking 2 indepedent nodes
 
-typedef struct node
+typedef struct node //creates linked list
 {
     char word[Length + 1];
     struct node *next;
