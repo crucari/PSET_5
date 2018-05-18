@@ -67,7 +67,7 @@ head = new_node;
 typedef struct node
 {
     bool is_word;
-    struct node *children[27];
+    struct node *children[27];  //number of nuckets
 }
 node;
 
